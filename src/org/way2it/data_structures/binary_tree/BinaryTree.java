@@ -62,7 +62,7 @@ public class BinaryTree {
         currentNode.value = root.value;
         boolean out = false;
         while (currentNode != null) {
-            if (value == currentNode.value) {
+            if (value == currentNode.value && currentNode.deleted == false) {
                 out = true;
                 currentNode.deleted = true;
                 size--;
